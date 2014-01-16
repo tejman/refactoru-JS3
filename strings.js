@@ -1,11 +1,8 @@
 // ********CHECK PHONE NUMBER*********
 var phone = prompt("Enter your phone number in the format xxx-xxx-xxxx: ");
-
-var numbers = phone.replace(/-/g, "")
-
-var justnum = parseInt(numbers)
-
-var justnumstr = justnum.toString()
+var numbers = phone.replace(/-/g, "");
+var justnum = parseInt(numbers);
+var justnumstr = justnum.toString();
 
 
 if (phone.charAt(3)==="-" && phone.charAt(7)==="-" && isNaN(justnum)===false && justnumstr.length===10)  
@@ -22,11 +19,8 @@ else
 
 // *******CHECK DATE OF BIRTH*********
 var dob = prompt("Enter your DOB in the format xx/xx/xx: ");
-
 var numbers = dob.replace(/\//g, "")
-
 var justnum = parseInt(numbers)
-
 var justnumstr = justnum.toString()
 
 
@@ -43,11 +37,8 @@ else
 // ********CHECK POSTAL CODE*********
 
 var postcode = prompt("Enter your postal code in the format xxxxx OR xxxxx-xxxx: ");
-
 var numbers = postcode.replace(/-/g, "")
-
 var justnum = parseInt(numbers)
-
 var justnumstr = justnum.toString()
 
 
